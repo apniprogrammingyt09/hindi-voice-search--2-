@@ -1,0 +1,569 @@
+{
+  "form_id": "grievance_registration_v1",
+  "title": "Municipal Grievance Complaint Registration",
+  "portal": "e-Nagarpalika",
+  "version": "1.0.0",
+  "generated_at": "2025-08-24T19:10:27.670080Z",
+  "locales": [
+    "en-IN",
+    "hi-IN"
+  ],
+  "description": "Step-by-step schema to collect user inputs and fill the municipal grievance complaint form.",
+  "validations": {
+    "regex": {
+      "pincode_in": "^[1-9][0-9]{5}$",
+      "mobile_in": "^[6-9][0-9]{9}$",
+      "std_code": "^[0-9]{2,5}$",
+      "phone_number": "^[0-9]{6,10}$",
+      "email": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+    },
+    "messages": {
+      "pincode_in": "Pincode must be a 6-digit Indian PIN starting 1-9.",
+      "mobile_in": "Mobile must be a valid 10-digit Indian number starting 6-9.",
+      "email": "Enter a valid email address."
+    }
+  },
+  "lookups": {
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "states": [
+      "Madhya Pradesh"
+    ],
+    "countries": [
+      "India"
+    ],
+    "complaint_types": {
+      "SEWAGE": {
+        "subtypes": [
+          "Drainage Overflow",
+          "Blocked Sewer Line",
+          "Broken Manhole",
+          "Sewage Smell",
+          "Illegal Sewage Connection",
+          "Complaint to Clean Drain",
+          "Manhole/Sewer Hole Cover Change",
+          "Maintenance of Chamber"
+        ]
+      },
+      "COMPOST WITH DRIED LEAVES": {
+        "subtypes": [
+          "Request for Compost Pit",
+          "Overflow of Compost Bin",
+          "Improper Compost Disposal",
+          "Foul Smell from Compost Site"
+        ]
+      },
+      "HEALTH": {
+        "subtypes": [
+          "Mosquito Breeding",
+          "Garbage Accumulation",
+          "Garbage Collection",
+          "Public Toilet Maintenance",
+          "Public Toilet Cleaning from Public Places & Buildings",
+          "Hospital/Clinic Issue",
+          "Food Safety Complaint",
+          "Dog Menace/Bites",
+          "To Raise Dead Dogs, Pigs and Cats",
+          "Picking of Dead Animals",
+          "Capture of Animals",
+          "Hobo Animal/Cow Dislodged Related Problem (remove dead/stray)",
+          "Complaint to Clean Drain",
+          "Manhole/Sewer Hole Cover Change"
+        ]
+      },
+      "WATER SUPPLY": {
+        "subtypes": [
+          "Water Shortage",
+          "Low Water Pressure",
+          "Pipeline Blockage",
+          "Pipe Leakage",
+          "Contaminated/Impure Water",
+          "Illegal Water Connection",
+          "Maintenance of Tap/Pipeline Connection",
+          "Providing New Connection",
+          "Handpump/Tube Well Not Working",
+          "Water Supply Issue (General)",
+          "Water Supply Through Tankers",
+          "Complaints Related to Water Supply (All Wards/Zones)"
+        ]
+      },
+      "ELECTRICITY": {
+        "subtypes": [
+          "Streetlight Not Working",
+          "Frequent Power Cut",
+          "Electric Wire Hazard",
+          "Transformer Issue",
+          "Illegal Connection"
+        ]
+      },
+      "ENGINEERING": {
+        "subtypes": [
+          "Road Potholes",
+          "Damaged Footpath",
+          "Broken Road Divider",
+          "Flyover/Bridge Issue",
+          "Construction Quality Complaint",
+          "Construction of School Buildings under Municipal Limits",
+          "Invalid/Unauthorized Construction",
+          "Maintenance/Repairing of Drain",
+          "Maintenance of Chamber",
+          "Road Improvement / Street Maintenance",
+          "Maintenance of Parking"
+        ]
+      },
+      "REVENUE": {
+        "subtypes": [
+          "Property Tax Error",
+          "Overbilling",
+          "Name Correction",
+          "Illegal Property Use",
+          "Assessment Issue",
+          "Permission for Hoarding / Unauthorized Advertisement Billing",
+          "Removal of Temporary Encroachment",
+          "Illegal Recovery/Collection",
+          "Paid Parking Facility under Municipal Area",
+          "Ad-Processing Fee for Nomination",
+          "Illegal Parking Fee",
+          "Other Complaint Regarding Property Tax"
+        ]
+      },
+      "FIRE BRIGADE": {
+        "subtypes": [
+          "Fire Safety Violation",
+          "Emergency Fire Service Delay",
+          "Blocked Fire Exit",
+          "False Alarm Issue"
+        ]
+      },
+      "FINANCE": {
+        "subtypes": [
+          "Billing Error",
+          "Delay in Refund",
+          "Corruption Complaint",
+          "Budget Utilization Query"
+        ]
+      },
+      "GARDEN": {
+        "subtypes": [
+          "Damaged Plants",
+          "Broken Fountains",
+          "Irrigation Problem",
+          "Park Cleanliness",
+          "Unauthorized Encroachment"
+        ]
+      },
+      "MISCELLANEOUS COMPLAINTS": {
+        "subtypes": [
+          "Noise Pollution",
+          "Illegal Encroachment",
+          "Stray Animals",
+          "Garbage Burning",
+          "Other"
+        ]
+      },
+      "LAKE PROTECTION": {
+        "subtypes": [
+          "Illegal Waste Dumping",
+          "Sewage Inflow",
+          "Water Pollution",
+          "Encroachment",
+          "Water Level Issue"
+        ]
+      },
+      "PARKING": {
+        "subtypes": [
+          "Illegal Parking",
+          "No Parking Sign Violation",
+          "Parking Lot Mismanagement",
+          "Overcharging",
+          "Encroachment in Parking Area"
+        ]
+      },
+      "BUILDING ALLOWANCE": {
+        "subtypes": [
+          "Illegal Construction",
+          "Building Code Violation",
+          "Height Restriction Violation",
+          "Unauthorized Extension",
+          "Approval Delay"
+        ]
+      },
+      "SOCIAL SECURITY": {
+        "subtypes": [
+          "Pension Delay",
+          "Ration Card Issue",
+          "Elderly Abuse Complaint",
+          "Disabled Support Request",
+          "Women Safety Complaint"
+        ]
+      },
+      "GOVARDHAN PROJECT": {
+        "subtypes": [
+          "Project Delay",
+          "Quality Issues",
+          "Encroachment on Project Land",
+          "Public Access Restriction"
+        ]
+      },
+      "BRTS AND BCL": {
+        "subtypes": [
+          "Bus Delay",
+          "Bus Stop Maintenance",
+          "Ticket Overcharging",
+          "Driver Misbehavior",
+          "Non-functional Smart Card"
+        ]
+      }
+    },
+    "cities": [],
+    "wards_by_city": {}
+  },
+  "steps": [
+    {
+      "step": 1,
+      "title": "Language & City",
+      "fields": [
+        {
+          "key": "language",
+          "label": "Select Language",
+          "type": "select",
+          "required": true,
+          "options_source": "lookups.languages"
+        },
+        {
+          "key": "city",
+          "label": "Select City / ULB",
+          "type": "select",
+          "required": true,
+          "options_source": "lookups.cities"
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Define Nature of Complaint",
+      "fields": [
+        {
+          "key": "complaint_type",
+          "label": "Select Your Complaint Type",
+          "type": "select",
+          "required": true,
+          "options_source": "keys(lookups.complaint_types)"
+        },
+        {
+          "key": "complaint_subtype",
+          "label": "Select Complaint Subtype",
+          "type": "select",
+          "required": true,
+          "options_source": "lookups.complaint_types[$complaint_type].subtypes"
+        },
+        {
+          "key": "description",
+          "label": "Description in Brief",
+          "type": "textarea",
+          "required": true,
+          "min_length": 10,
+          "placeholder": "e.g., No water supply in ABC Colony since 2 days"
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Specify Location of Complaint",
+      "fields": [
+        {
+          "key": "complaint_location.house_no",
+          "label": "House No.",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "complaint_location.house_name",
+          "label": "House Name",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "complaint_location.area_main",
+          "label": "Area in Address",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "complaint_location.area_1",
+          "label": "Area 1",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "complaint_location.area_2",
+          "label": "Area 2",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "complaint_location.zone_or_ward_no",
+          "label": "Zone No. / Ward No.",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "complaint_location.landmark",
+          "label": "Landmark",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "complaint_location.pincode",
+          "label": "Pincode",
+          "type": "text",
+          "required": true,
+          "pattern": "validations.regex.pincode_in"
+        },
+        {
+          "key": "complaint_location.city",
+          "label": "City",
+          "type": "readonly",
+          "required": true,
+          "value_source": "$city"
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Complainant Name",
+      "fields": [
+        {
+          "key": "name.first_name",
+          "label": "First Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name.middle_name",
+          "label": "Middle Name",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "name.last_name",
+          "label": "Last Name",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Complainant Address",
+      "fields": [
+        {
+          "key": "address.select_ward",
+          "label": "Select Ward",
+          "type": "select",
+          "required": true,
+          "options_source": "lookups.wards_by_city[$city]"
+        },
+        {
+          "key": "address.house_no",
+          "label": "House No.",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "address.house_name",
+          "label": "House Name",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "address.area_main",
+          "label": "Area in Address",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "address.area_1",
+          "label": "Area 1",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "address.area_2",
+          "label": "Area 2",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "address.landmark",
+          "label": "Landmark",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "address.city",
+          "label": "City",
+          "type": "readonly",
+          "required": true,
+          "value_source": "$city"
+        },
+        {
+          "key": "address.state",
+          "label": "State",
+          "type": "select",
+          "required": true,
+          "options_source": "lookups.states",
+          "default": "Madhya Pradesh"
+        },
+        {
+          "key": "address.pincode",
+          "label": "Pincode",
+          "type": "text",
+          "required": true,
+          "pattern": "validations.regex.pincode_in"
+        },
+        {
+          "key": "address.country",
+          "label": "Country",
+          "type": "select",
+          "required": true,
+          "options_source": "lookups.countries",
+          "default": "India"
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "title": "Contact Details",
+      "fields": [
+        {
+          "key": "contact.telephone_office_std",
+          "label": "(STD Code) Telephone (Office) - STD Code",
+          "type": "text",
+          "required": false,
+          "pattern": "validations.regex.std_code"
+        },
+        {
+          "key": "contact.telephone_office_number",
+          "label": "Telephone (Office) - Number",
+          "type": "text",
+          "required": false,
+          "pattern": "validations.regex.phone_number"
+        },
+        {
+          "key": "contact.mobile_no",
+          "label": "Mobile No.",
+          "type": "text",
+          "required": true,
+          "pattern": "validations.regex.mobile_in"
+        },
+        {
+          "key": "contact.telephone_res_std",
+          "label": "(STD Code) Telephone (Residence) - STD Code",
+          "type": "text",
+          "required": false,
+          "pattern": "validations.regex.std_code"
+        },
+        {
+          "key": "contact.telephone_res_number",
+          "label": "Telephone (Residence) - Number",
+          "type": "text",
+          "required": false,
+          "pattern": "validations.regex.phone_number"
+        },
+        {
+          "key": "contact.email",
+          "label": "E-mail Address",
+          "type": "text",
+          "required": false,
+          "pattern": "validations.regex.email"
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "title": "Attachments (Optional)",
+      "fields": [
+        {
+          "key": "attachments.photos",
+          "label": "Upload Photos/Videos (optional)",
+          "type": "file[]",
+          "required": false,
+          "accept": [
+            "image/*",
+            "video/*"
+          ]
+        },
+        {
+          "key": "attachments.documents",
+          "label": "Upload Supporting Documents (optional)",
+          "type": "file[]",
+          "required": false,
+          "accept": [
+            ".pdf",
+            ".jpg",
+            ".png"
+          ]
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "title": "Review & Confirm",
+      "fields": [
+        {
+          "key": "review.summary",
+          "label": "Review Summary",
+          "type": "system",
+          "template": "Render a readable summary of all collected fields for final confirmation."
+        },
+        {
+          "key": "consent.declaration",
+          "label": "I confirm the above information is true and authorize its submission to the municipal portal.",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "submission": {
+    "method": "portal_form_fill",
+    "target": "e-Nagarpalika Grievance Page",
+    "mapping_hints": {
+      "city": "ddlCity",
+      "language": "ddlLanguage",
+      "complaint_type": "ddlComplaintType",
+      "complaint_subtype": "ddlComplaintSubtype",
+      "description": "txtDescription",
+      "complaint_location.house_no": "txtCL_HouseNo",
+      "complaint_location.house_name": "txtCL_HouseName",
+      "complaint_location.area_main": "txtCL_AreaMain",
+      "complaint_location.area_1": "txtCL_Area1",
+      "complaint_location.area_2": "txtCL_Area2",
+      "complaint_location.zone_or_ward_no": "txtCL_WardNo",
+      "complaint_location.landmark": "txtCL_Landmark",
+      "complaint_location.pincode": "txtCL_Pincode",
+      "name.first_name": "txtFirstName",
+      "name.middle_name": "txtMiddleName",
+      "name.last_name": "txtLastName",
+      "address.select_ward": "ddlWard",
+      "address.house_no": "txtHouseNo",
+      "address.house_name": "txtHouseName",
+      "address.area_main": "txtAreaMain",
+      "address.area_1": "txtArea1",
+      "address.area_2": "txtArea2",
+      "address.landmark": "txtLandmark",
+      "address.state": "ddlState",
+      "address.pincode": "txtPincode",
+      "address.country": "ddlCountry",
+      "contact.telephone_office_std": "txtTelOffSTD",
+      "contact.telephone_office_number": "txtTelOff",
+      "contact.mobile_no": "txtMobile",
+      "contact.telephone_res_std": "txtTelResSTD",
+      "contact.telephone_res_number": "txtTelRes",
+      "contact.email": "txtEmail"
+    }
+  }
+}

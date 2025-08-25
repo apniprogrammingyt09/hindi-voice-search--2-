@@ -1,0 +1,133 @@
+{
+  "services": [
+    {
+      "service_name": "Birth registration",
+      "form": "Form 1",
+      "tag": ["birth", "registration", "form1"],
+      "procedure": "Fill Form 1 (Birth Report) with date/sex of child, parents’ details, addresses, and place of birth; the “informant” signs a declaration and the Registrar completes the registration section. If the child is not yet named, leave the name blank; you can add the name within 12 months free of charge. For multiple births, submit a separate form for each child.",
+      "documents_required": [
+        "Completed Form 1 with informant’s signature and required particulars (parents’ details, addresses, place of birth).",
+        "Aadhaar numbers (if available).",
+        "Declaration of consent for Aadhaar authentication.",
+        "Form 14 (Delayed Reporting declaration) in delayed cases."
+      ]
+    },
+    {
+      "service_name": "Birth registration for an adopted child",
+      "form": "Form 1A",
+      "tag": ["birth", "registration", "adoption", "form1a"],
+      "procedure": "Fill Form 1A (Birth Report for Adopted Child) with the child’s (new) name, adoptive parents’ details, and adoption deed/order details. Informant responsible as per the RBD Act.",
+      "documents_required": [
+        "Adoption deed/order details (date and number).",
+        "Standard identity/contact particulars in the form.",
+        "Aadhaar entries (if available).",
+        "Form 14 (Delayed Reporting declaration) in delayed cases."
+      ]
+    },
+    {
+      "service_name": "Still birth registration",
+      "form": "Form 3",
+      "tag": ["stillbirth", "registration", "form3"],
+      "procedure": "Fill Form 3 (Still Birth Report) with parents’ details, place of birth, and statistical items; informant signs a declaration. Note: Medical Certificate of Cause of Death forms (4/4A) are not used for still births.",
+      "documents_required": [
+        "Completed Form 3 with informant’s signature.",
+        "Cause of foetal death field (if known).",
+        "Other particulars listed in the form instructions.",
+        "Form 14 (Delayed Reporting declaration) in delayed cases."
+      ]
+    },
+    {
+      "service_name": "Death registration",
+      "form": "Form 2",
+      "tag": ["death", "registration", "form2"],
+      "procedure": "Fill Form 2 (Death Report) with date/place of death, deceased’s details, and informant’s declaration; the Registrar completes the register portion. Attach the Medical Certificate of Cause of Death (MCCD): Form 4 for hospital in-patients (sent to Registrar with Form 2). Form 4A for non-institutional deaths (doctor gives it to the informant to submit with Form 2).",
+      "documents_required": [
+        "Completed Form 2 with informant’s signature.",
+        "MCCD: Form 4 (hospital in-patient) or Form 4A (non-institutional), as applicable.",
+        "Form 14 (Delayed Reporting declaration) in delayed cases."
+      ]
+    },
+    {
+      "service_name": "Birth Certificate issuance",
+      "form": "Form 5",
+      "tag": ["birth", "certificate", "form5"],
+      "procedure": "Once the birth is registered, the Registrar issues the Birth Certificate in the statutory format under Section 12/17 of the Act (format shown in Form 5).",
+      "documents_required": [
+        "Extract from the birth register (registration number, date, place, etc.).",
+        "No additional documents beyond registration record are required."
+      ]
+    },
+    {
+      "service_name": "Death Certificate issuance",
+      "form": "Form 6",
+      "tag": ["death", "certificate", "form6"],
+      "procedure": "After the death is registered (with the MCCD attached), the Registrar issues the Death Certificate in the statutory format under Section 12/17 of the Act.",
+      "documents_required": [
+        "Extract from the death register (registration number, date/place of death, etc.).",
+        "No additional documents beyond registration record are required."
+      ]
+    },
+        {
+      "service_name": "Property Tax Payment",
+      "mode": "Online via e-Nagarpalika Portal",
+      "tag": ["property", "tax", "payment", "online", "e-nagarpalika"],
+      "procedure": [
+        "Go to e-Nagarpalika portal.",
+        "Click Pay Taxes/Charges/Fees → Pay Property Tax.",
+        "Login with existing credentials or create a new account.",
+        "Provide required property/account details.",
+        "Proceed to payment gateway (net banking, debit/credit card, UPI).",
+        "After successful payment, download receipt.",
+        "Receipt is also sent via email and SMS notification."
+      ],
+      "documents_required": [
+        "Name",
+        "Email ID",
+        "Mobile number",
+        "Date of Birth (for account creation)",
+        "Property/account details (for tax identification)"
+      ],
+      "time_required": "Instant: Payment confirmation and receipt are generated immediately after successful transaction."
+    },
+    {
+      "service_name": "Food License",
+      "mode": "Online via e-Nagar Palika portal",
+      "tag": ["food", "license", "registration", "online", "madhya pradesh"],
+      "procedure": [
+        "Go to the e-Nagar Palika portal and submit an online application for a Food License with required documents.",
+        "System generates a Registration Number and your application enters the approval workflow.",
+        "The ARO (Revenue Officer) reviews and recommends; then the application moves to the Deputy Commissioner / Assistant Commissioner / Additional Commissioner for final approval.",
+        "Once approved, you receive an alert notifying approval status and prompting payment.",
+        "Pay the prescribed fees through the portal.",
+        "After payment, an automatically generated license with the approving authority’s digital signature is issued—download it from the portal."
+      ],
+      "documents_required": [
+        "Government-issued Photo ID (choose one: Voter ID / PAN Card / Driving License / Aadhaar Card / Rent Agreement / Partnership proof).",
+        "Proof of premises:",
+        "  - Owned property: Property Tax Receipt or Property Registration details.",
+        "  - Rented property: Self-attested Rent Agreement copy OR Property Tax Receipt copy."
+      ],
+      "time_required": "Within 30 days from submission of a complete application with required documents."
+    },
+    {
+      "service_name": "Marriage Certificate",
+      "tag": ["marriage", "certificate", "registration"],
+      "procedure": [
+        "Apply via form.",
+        "Submit documents.",
+        "Verification by authority.",
+        "Certificate issuance."
+      ],
+      "documents_required": [
+        "Birth notification",
+        "Identity proof",
+        "Address proof"
+      ],
+      "time_required": "Varies depending on verification and approval timeline."
+    }
+  ],
+  "common_notes": {
+    "aadhaar": "Forms capture Aadhaar numbers if available and include Aadhaar-authentication consent as part of the informant’s declaration.",
+    "delayed_reporting": "For delayed reporting of either birth or death, Form 14 (self-attested declaration) is used under Section 13(2)."
+  }
+}

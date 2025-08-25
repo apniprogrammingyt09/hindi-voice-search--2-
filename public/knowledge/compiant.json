@@ -1,0 +1,187 @@
+{
+  "complaints": {
+    "SEWAGE": {
+      "subtypes": [
+        "Drainage Overflow",
+        "Blocked Sewer Line",
+        "Broken Manhole",
+        "Sewage Smell",
+        "Illegal Sewage Connection",
+        "Complaint to Clean Drain",
+        "Manhole/Sewer Hole Cover Change",
+        "Maintenance of Chamber"
+      ]
+    },
+    "COMPOST WITH DRIED LEAVES": {
+      "subtypes": [
+        "Request for Compost Pit",
+        "Overflow of Compost Bin",
+        "Improper Compost Disposal",
+        "Foul Smell from Compost Site"
+      ]
+    },
+    "HEALTH": {
+      "subtypes": [
+        "Mosquito Breeding",
+        "Garbage Accumulation",
+        "Garbage Collection",
+        "Public Toilet Maintenance",
+        "Public Toilet Cleaning from Public Places & Buildings",
+        "Hospital/Clinic Issue",
+        "Food Safety Complaint",
+        "Dog Menace/Bites",
+        "To Raise Dead Dogs, Pigs and Cats",
+        "Picking of Dead Animals",
+        "Capture of Animals",
+        "Hobo Animal Cow Dislodged Lied Related Problem and to Remove Daria",
+        "Marriage Registration"
+      ]
+    },
+    "WATER SUPPLY": {
+      "subtypes": [
+        "Water Shortage",
+        "Low Water Pressure",
+        "Pipeline Lockage",
+        "Pipe Leakage",
+        "Contaminated Water",
+        "Issue of Impure Water",
+        "Impure Water",
+        "Illegal Water Connection",
+        "Maintenance of Tap and Pipeline Connection",
+        "Providing New Connections",
+        "Handpump/Tube Well is Not Working",
+        "Water Supply Issue",
+        "Water Supply Through Tankers",
+        "Complaints Related to Water Supply in All Wards/Zones Under M.C."
+      ]
+    },
+    "ELECTRICITY": {
+      "subtypes": [
+        "Streetlight Not Working",
+        "Frequent Power Cut",
+        "Electric Wire Hazard",
+        "Transformer Issue",
+        "Illegal Connection"
+      ]
+    },
+    "ENGINEERING": {
+      "subtypes": [
+        "Potholes",
+        "Road Potholes",
+        "Damaged Footpath",
+        "Broken Road Divider",
+        "Flyover/Bridge Issue",
+        "Construction Quality Complaint",
+        "Construction of School Buildings under Municipal Limits",
+        "Invalid/Unauthorized Construction",
+        "Maintenance of Repairing Drain",
+        "Maintenance of Chamber",
+        "Related to Road Improvement Maintenance of Street/Road",
+        "Maintenance of Parking"
+      ]
+    },
+    "REVENUE": {
+      "subtypes": [
+        "Property Tax Error",
+        "Overbilling",
+        "Name Correction",
+        "Illegal Property Use",
+        "Assessment Issue",
+        "Compliance of Permission for Hoarding and Unauthorized Advertisement Billings",
+        "Removal of Temporary Encroachment",
+        "Illegal Recovery/Collection",
+        "Paid Parking Facility under Municipal Corporation Area",
+        "Ad-Processing Fee for Nomination",
+        "Illegal Parking Fee",
+        "Other Complaint Regarding Property Tax"
+      ]
+    },
+    "FIRE BRIGADE": {
+      "subtypes": [
+        "Fire Safety Violation",
+        "Emergency Fire Service Delay",
+        "Blocked Fire Exit",
+        "False Alarm Issue"
+      ]
+    },
+    "FINANCE": {
+      "subtypes": [
+        "Billing Error",
+        "Delay in Refund",
+        "Corruption Complaint",
+        "Budget Utilization Query"
+      ]
+    },
+    "GARDEN": {
+      "subtypes": [
+        "Damaged Plants",
+        "Broken Fountains",
+        "Irrigation Problem",
+        "Park Cleanliness",
+        "Unauthorized Encroachment"
+      ]
+    },
+    "MISCELLANEOUS COMPLAINTS": {
+      "subtypes": [
+        "Noise Pollution",
+        "Illegal Encroachment",
+        "Stray Animals",
+        "Garbage Burning",
+        "Other"
+      ]
+    },
+    "LAKE PROTECTION": {
+      "subtypes": [
+        "Illegal Waste Dumping",
+        "Sewage Inflow",
+        "Water Pollution",
+        "Encroachment",
+        "Water Level Issue"
+      ]
+    },
+    "PARKING": {
+      "subtypes": [
+        "Illegal Parking",
+        "No Parking Sign Violation",
+        "Parking Lot Mismanagement",
+        "Overcharging",
+        "Encroachment in Parking Area"
+      ]
+    },
+    "BUILDING ALLOWANCE": {
+      "subtypes": [
+        "Illegal Construction",
+        "Building Code Violation",
+        "Height Restriction Violation",
+        "Unauthorized Extension",
+        "Approval Delay"
+      ]
+    },
+    "SOCIAL SECURITY": {
+      "subtypes": [
+        "Pension Delay",
+        "Ration Card Issue",
+        "Elderly Abuse Complaint",
+        "Disabled Support Request",
+        "Women Safety Complaint"
+      ]
+    },
+    "GOVARDHAN PROJECT": {
+      "subtypes": [
+        "Project Delay",
+        "Quality Issues",
+        "Encroachment on Project Land",
+        "Public Access Restriction"
+      ]
+    },
+    "BRTS AND BCL": {
+      "subtypes": [
+        "Bus Delay",
+        "Bus Stop Maintenance",
+        "Ticket Overcharging",
+        "Driver Misbehavior",
+        "Non-functional Smart Card"
+      ]
+    }
+  }
+}

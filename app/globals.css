@@ -1,0 +1,177 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens for government digital platform theme */
+  --background: #ffffff; /* White background for main sections */
+  --foreground: #374151; /* Text color */
+  --card: #f8fafc; /* Light gray for cards */
+  --card-foreground: #1e3a8a; /* Dark blue for card text */
+  --popover: #ffffff; /* Popover background */
+  --popover-foreground: #374151; /* Popover text */
+  --primary: #1e3a8a; /* Deep blue for primary actions */
+  --primary-foreground: #ffffff; /* White text for primary buttons */
+  --secondary: #3b82f6; /* Vibrant blue for accents */
+  --secondary-foreground: #ffffff; /* White text on secondary buttons */
+  --muted: #f8fafc; /* Light gray for muted text */
+  --muted-foreground: #374151; /* Dark gray for muted text */
+  --accent: #3b82f6; /* Vibrant blue for highlights */
+  --accent-foreground: #ffffff; /* White text on accent elements */
+  --destructive: #dc2626; /* Red for errors */
+  --destructive-foreground: #ffffff; /* White text on error messages */
+  --border: #e5e7eb; /* Light gray for borders */
+  --input: #f9fafb; /* Light background for input fields */
+  --ring: #3b82f6; /* Vibrant blue for focus rings */
+  --chart-1: #3b82f6; /* Blue for charts */
+  --chart-2: #f59e0b; /* Yellow for charts */
+  --chart-3: #15803d; /* Green for charts */
+  --chart-4: #dc2626; /* Red for charts */
+  --chart-5: #6366f1; /* Purple for charts */
+  --radius: 0.5rem; /* Corner rounding */
+  --sidebar: #ffffff; /* Sidebar background */
+  --sidebar-foreground: #374151; /* Sidebar text */
+  --sidebar-primary: #f8fafc; /* Sidebar primary color */
+  --sidebar-primary-foreground: #1e3a8a; /* Sidebar primary text */
+  --sidebar-accent: #3b82f6; /* Sidebar accent color */
+  --sidebar-accent-foreground: #ffffff; /* Sidebar accent text */
+  --sidebar-border: #e5e7eb; /* Sidebar border color */
+  --sidebar-ring: #3b82f6; /* Sidebar focus ring */
+}
+
+.dark {
+  /* Dark mode tokens for government platform */
+  --background: #111827;
+  --foreground: #f9fafb;
+  --card: #1f2937;
+  --card-foreground: #f9fafb;
+  --popover: #1f2937;
+  --popover-foreground: #f9fafb;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #1e3a8a;
+  --secondary-foreground: #ffffff;
+  --muted: #374151;
+  --muted-foreground: #9ca3af;
+  --accent: #3b82f6;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #374151;
+  --input: #1f2937;
+  --ring: #3b82f6;
+  --chart-1: #3b82f6;
+  --chart-2: #f59e0b;
+  --chart-3: #15803d;
+  --chart-4: #dc2626;
+  --chart-5: #6366f1;
+  --sidebar: #1f2937;
+  --sidebar-foreground: #f9fafb;
+  --sidebar-primary: #374151;
+  --sidebar-primary-foreground: #f9fafb;
+  --sidebar-accent: #3b82f6;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #374151;
+  --sidebar-ring: #3b82f6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added government platform specific styles */
+.hero-gradient {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.category-card {
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+}
+
+/* Added custom glowing animation for the voice button */
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px oklch(0.7 0.3 285 / 0.4), 0 0 40px oklch(0.7 0.3 285 / 0.2), 0 0 60px oklch(0.7 0.3 285 / 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px oklch(0.7 0.3 285 / 0.6), 0 0 60px oklch(0.7 0.3 285 / 0.3), 0 0 90px oklch(0.7 0.3 285 / 0.15);
+  }
+}
+
+.glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* Added gradient background animation */
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    -45deg,
+    oklch(0.08 0.05 270),
+    oklch(0.06 0.08 280),
+    oklch(0.1 0.06 260),
+    oklch(0.08 0.05 270)
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
